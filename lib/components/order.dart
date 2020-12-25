@@ -16,6 +16,8 @@ class Order extends StatefulWidget {
       @required this.quantity})
       : super(key: key);
 
+  Order.withDetails(this.foodName, this.unitPrice, this.stars, this.quantity);
+
   @override
   _OrderState createState() => _OrderState();
 }

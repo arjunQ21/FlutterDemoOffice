@@ -55,6 +55,20 @@ class HomePage extends StatelessWidget {
               },
               subtitle: Text('Login Page'),
             ),
+            ListTile(
+              title: Text('Backend Connection'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/backend');
+              },
+              subtitle: Text('Adding and showing foods.'),
+            ),
+            ListTile(
+              title: Text('Local Storage'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/local');
+              },
+              subtitle: Text('Shared Preferences Local Storage'),
+            ),
           ],
         ),
       ),
